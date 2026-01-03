@@ -1,0 +1,49 @@
+# This a multi-locale YAML file for RenderCV, to be processed by process_multi_locale.py
+cv:
+  name: John Doe
+  location: New York, NY
+  sections:
+    education:
+      - institution: "University of Example"
+        location: NY
+        degree:
+          en: "Bachelor of Science"
+          es: "Grado"
+        area:
+          en: "Computer Science"
+          es: "Ingeniería Informática"
+        highlights:
+          en:
+            - "GPA: 3.8/4.0"
+          es:
+            - "Nota media: 8.5/10"
+    experience:
+      - company: "Tech Solutions"
+        location: Remote
+        position:
+          en: "Software Engineer"
+          es: "Ingeniero de Software"
+        highlights:
+          en:
+            - "Developed high-performance web applications."
+          es:
+            - "Desarrollé aplicaciones web de alto rendimiento."
+
+locale:
+  en:
+    language: english
+  # No need to translate this part
+  #    sections:
+  #      education: Education
+  #      experience: Experience
+  es:
+    language: spanish
+    # Custom translations for section titles
+    sections:
+      education: Formación
+      experience: Experiencia
+
+settings:
+  render_command:
+    pdf_path: "rendercv_output/John_Doe_LOCALE.pdf"
+    markdown_path: "rendercv_output/John_Doe_LOCALE.md"
